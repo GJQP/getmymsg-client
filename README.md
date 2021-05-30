@@ -19,7 +19,7 @@ npm install
 ## Usage
 
 ```bash
-npm start
+node client
 ```
 
 ### Flags
@@ -30,20 +30,20 @@ All flags can be used together and in any order. The parameters include the foll
 
 TCP Host IP Address or name
 ```bash
-npm start -- -s
+node client -s 10.0.0.10
 ```
 ```bash
-npm start -- --tcp-server 10.0.0.10
+node client --tcp-server 10.0.0.10
 ```
 
 * TCP Port
 
 Host TCP Port to send message.
 ```bash
-npm start -- -p 12345
+node client -p 12345
 ```
 ```bash
-npm start -- --tcp-port 12345
+node client --tcp-port 12345
 ```
 
 * UDP Port
@@ -51,38 +51,36 @@ npm start -- --tcp-port 12345
 UDP Port to open on system. If 0 the O.S. will assign an available port.
 
 ```bash
-npm start -- -u 12345
+node client -u 54321
 ```
 ```bash
-npm start -- --udp-port 12345
+node client --udp-port 54321
 ```
 
 * Server encoding
 
-UDP Port to open on system. If 0 the O.S. will assign an available port.
+Host encoding. Supported encodings are `utf-8`, `utf-16le` and `latin`. Options are displayed on help.
 
 ```bash
-npm start -- -e 12345
+node client -e utf-8
 ```
 ```bash
-npm start -- --server-encoding 12345
+node client --server-encoding utf-8
 ```
 
 * Verbose
 
 Prints debugging information
 ```bash
-npm start -- -v
+node client -v
 ```
 * Help
 
 This information is availble using `-h` or `--help`
 
+## Server
 
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
+Server implementation. Available soon.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
