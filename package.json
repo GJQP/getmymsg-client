@@ -1,0 +1,16 @@
+{
+  "name": "getmymsg-node-client",
+  "version": "1.0.0",
+  "description": "Node.js TCP and UDP Sockets",
+  "main": "client.js",
+  "scripts": {
+    "start": "node client --",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gustavo Quintana <gjquintanap@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "md5": "^2.3.0",
+    "yargs": "^17.0.1"
+  }
+}
